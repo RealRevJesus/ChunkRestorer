@@ -1,0 +1,29 @@
+# 
+# Amount of time in milliseconds that a chunk isn't modified before a chunk is queued for rollback
+# Time is still counted when the server is offline
+# Lands claimed chunks are ignored and never rollback
+#
+# 60000 = 1 minute
+# 600000 = 10 minutes
+# etc.
+#
+
+millisBeforeRollback: 60000
+
+#
+# Configuration for worlds that are used when rolling back
+# The key is the actual world you want to rollback
+# The value is the world that contains the rollback data
+# If a world is not here, it will not be rolled back
+# 
+
+rollbackWorlds:
+  mainWorld: templateWorld
+  lorem: ipsum
+  world: templateWorld
+  
+#
+# If you enable that option, you will receive messages whenever something has been rollbacked
+# 
+
+debug: false

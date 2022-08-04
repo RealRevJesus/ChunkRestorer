@@ -1,0 +1,11 @@
+name: ChunkRestorer
+main: com.mcmultiverse.chunkrestorer.ChunkRestorer
+version: 0.2
+api-version: 1.17
+softdepend: [Lands]
+depend: [WorldEdit, WorldGuard]
+author: Symphonic
+commands:
+ rollback-list:
+  description: Lists all the rollback linked worlds
+  usage: /<command>
